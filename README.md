@@ -1,5 +1,7 @@
 # aiostreams-badges
 
+![AIOStreams version list with the badges](header.png)
+
 Version badges for the AIOStreams app. Gold = optimal, grey = acceptable.
 Codec and dynamic range are two-line image badges: a filled top block with
 the name cut out, the detail below a full-width rule. Everything else stays
@@ -21,6 +23,7 @@ Open index.html for a visual overview with copy buttons.
                         description.txt
     codec/  hdr/        images, PNG 6x + SVG
     preview-badges.png  preview
+    header.png          screenshot of the version list in the app
 
     gold  codec: h265 av1 10bit    hdr: hdrdv dv hdr10plus hdr10
     grey  codec: h264 vp9          hdr: hlg sdr
