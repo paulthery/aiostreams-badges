@@ -81,8 +81,8 @@ HLG or Dolby Vision marker. No formatter text needed.
     Double frame around an image      a custom "border" plus an image that
                                       draws its own frame; use the files
                                       from this repo as they are
-    Empty corners on the gold block   update badges.css (border-radius 0
-                                      on the image)
+    Seam in the corners of the gold   update badges.css (image slides
+    block                             under the frame, badge clipped)
     Only 4K, never HD                 the version list is capped (25 on
                                       some instances) and 4K fills it.
                                       Filters > Result Limits > Resolution

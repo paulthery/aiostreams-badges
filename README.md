@@ -64,6 +64,6 @@ Remove the badges you do not need before importing.
 Typeface Inter. Image 81 x 41 units, no frame: top block filled with the
 tier colour, name cut out (Inter Bold 15); detail below (Inter Medium 8,
 tracked 1.8, 85 %). The app border (1 px, gold #C6A56B or grey #8C8C8C)
-frames it. CSS: every badge 1.375rem high, 5 px radius, image badges with
-padding 0. Palette: black #0E0E0E, ivory #EDE8DF, gold #C6A56B, greys
+frames it. CSS: every badge 1.375rem high, 5 px radius; image badges with
+padding 0, the image 1 px under the frame, badge clipped to its shape. Palette: black #0E0E0E, ivory #EDE8DF, gold #C6A56B, greys
 #8C8C8C #5A5A5A #4A4A4A #2E2E2E, FR fill #2A2723 / #1C1B19.
