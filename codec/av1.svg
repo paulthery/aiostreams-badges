@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="26.26" viewBox="0 0 64 26.26">
-  <text class="t" x="32.00" y="12.11" text-anchor="middle" font-family="Inter" font-weight="700" font-size="15" letter-spacing="0" fill="#C6A56B">AV1</text>
-  <line x1="0" y1="15.31" x2="64" y2="15.31" stroke="#C6A56B" stroke-width="0.75" opacity=".55"/>
-  <text class="b" x="32.70" y="25.06" text-anchor="middle" font-family="Inter" font-weight="600" font-size="9" letter-spacing="1.4" fill="#C6A56B" opacity=".9">AOMEDIA</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="44" viewBox="0 0 84 44">
+  <rect x="0.75" y="0.75" width="82.5" height="42.5" rx="6" fill="none" stroke="#C6A56B" stroke-width="1.5"/>
+  <line x1="0.75" y1="26.5" x2="83.25" y2="26.5" stroke="#C6A56B" stroke-width="0.75" opacity=".55"/>
+  <text class="t" x="42.10" y="19.21" text-anchor="middle" font-family="Inter" font-weight="700" font-size="15" letter-spacing="0.2" fill="#C6A56B">AV1</text>
+  <text class="b" x="42.90" y="37.66" text-anchor="middle" font-family="Inter" font-weight="500" font-size="8" letter-spacing="1.8" fill="#C6A56B" opacity=".85">AOMEDIA</text>
 </svg>
