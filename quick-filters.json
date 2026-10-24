@@ -7,7 +7,7 @@
     {"name": "HDR", "query": "/HDR|\\bDV\\b|HLG/", "fields": ["visualTags"]},
     {"name": "SDR", "query": "/^(?!.*(HDR|\\bDV\\b|\\bDoVi\\b|HLG|Dolby[ ._-]?Vision)).+$/", "fields": ["filename"]},
     {"name": "IMAX", "query": "/\\bimax\\b/", "fields": ["visualTags", "editions", "filename"]},
-    {"name": "Extended", "query": "/^(Extended Edition|Director's Cut|Uncut|Ultimate Edition)$|\\bunrated\\b|version[ ._-]?longue/", "fields": ["editions", "filename"]},
+    {"name": "Cuts", "query": "/(?:^(?!(The[ ._-])?Final[ ._-]Cut[ ._-](19|20)\\d\\d).*\\bfinal[ ._-]?cut\\b)|(?:^Director's Cut$|\\bdirector'?s?[ ._-]?cut\\b)|(?:\\bredux\\b)|(?:\\brogue[ ._-]?cut\\b)|(?:^Ultimate Edition$|\\bultimate[ ._-]?(cut|edition)\\b)|(?:^Extended Edition$|version[ ._-]?longue)|(?:\\broadshow\\b)|(?:\\bunrated\\b)|(?:^Uncut$|version[ ._-]?integrale)|(?:\\buncensored\\b)|(?:\\bdefinitive[ ._-]?(cut|edition)\\b)|(?:\\bspecial[ ._-]?edition\\b)|(?:\\binternational[ ._-]?(cut|version)\\b)|(?:\\balternat(e|ive)[ ._-]?(cut|version)\\b)|(?:\\bassembly[ ._-]?cut\\b)|(?:\\bproducers?'?[ ._-]?cut\\b)|(?:\\bworkprint\\b)|(?:\\b(tv|television)[ ._-]?(cut|version)\\b)/", "fields": ["editions", "filename"]},
     {"name": "VF", "query": "/^(French|Multi)$|\\b(TRUEFRENCH|FRENCH|VFF|VFQ|VFI|VF2|MULTI)\\b/", "fields": ["languages", "filename", "folderName"]}
   ]
 }

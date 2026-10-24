@@ -14,7 +14,7 @@ Images load from this repository; nothing to host.
    one wins, so old badges would hide the new ones.
 3. Open `badges.json`, copy all of it, paste it in Import.
 4. Click Import, then Save (white button, bottom right).
-5. The Badges row must read `46 badges of your own`. If not, Save was
+5. The Badges row must read `70 badges of your own`. If not, Save was
    skipped: closing with the cross or Cancel discards the import.
 
 ## 2. CSS
@@ -35,7 +35,7 @@ the radius.
 2. Delete existing filters (import appends).
 3. Paste `quick-filters.json` in Import, click Import, then Save.
 
-Filters: T1, 4K, HD, SD, HDR, SDR, IMAX, Extended, VF.
+Filters: T1, 4K, HD, SD, HDR, SDR, IMAX, Cuts, VF.
 
 ## 4. Formatter (optional)
 
@@ -98,13 +98,42 @@ HLG or Dolby Vision marker. No formatter text needed.
 
 ## Editions
 
-    EXTENDED    any longer cut: Extended, Director's Cut, Uncut, Unrated,
-                Ultimate Edition, VERSION LONGUE (French)
-    REMASTERED  Remastered, Restored, Restoration; shown alongside EXTENDED
+One badge per cut or edition. They share a group, so a version shows only
+the first match, in this order:
 
-Both read the parsed editions first, so a title such as Uncut Gems does
-not trigger. The badge trusts the file name: a release mislabelled
-"Extended" still gets it. When the duration is shown, it is the check.
+    FINAL CUT     file name
+    DIR CUT       editions + file
+    REDUX         file name
+    ROGUE CUT     file name
+    ULTIMATE      editions + file
+    EXTENDED      editions + file
+    ROADSHOW      file name
+    UNRATED       file name
+    UNCUT         editions + file
+    UNCENSORED    file name
+    DEFINITIVE    file name
+    SPECIAL ED    file name
+    INTL CUT      file name
+    ALT CUT       file name
+    ASSEMBLY      file name
+    PRODUCER CUT  file name
+    WORKPRINT     file name
+    TV CUT        file name
+    B&W           file name
+    DESPECIALIZED file name
+    ANNIVERSARY   editions
+    COLLECTOR     editions
+    DIAMOND       editions
+    PLATINUM      file name
+    THEATRICAL    editions
+
+Separate badges, shown alongside: REMASTERED (Remastered, Restored,
+Restoration), IMAX, CRITERION, OPEN MATTE. The Cuts quick filter catches
+every longer or alternate cut (FINAL CUT to TV CUT).
+
+Parsed editions are read first, so titles such as Uncut Gems, Paper Cut
+or The Final Cut (2004) do not trigger. The badges trust the file name:
+a release mislabelled "Extended" still gets it; the duration is the check.
 
 ## Fewer foreign titles (optional)
 
