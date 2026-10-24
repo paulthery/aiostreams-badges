@@ -41,6 +41,10 @@ app both cache.
 
 ## Dependencies
 
+SDR (badge and quick filter) is detected from the file name: no HDR, DV,
+DoVi, HLG or Dolby Vision marker. No formatter text needed.
+
+
 Some badges read results from the AIOStreams config, not from the file name.
 
     T1 T2 T3 LQ      Vidhin ranked stream expressions (rseMatched)
@@ -50,7 +54,6 @@ Some badges read results from the AIOStreams config, not from the file name.
                      /* Ready AD */ service(cached(streams), 'alldebrid')
                      /* Ready TB */ service(cached(streams), 'torbox')
                      /* Ready EN */ service(cached(streams), 'easynews')
-    SDR filter       formatter writes "SDR" when a stream has no visual tag
 
 Remove the badges you do not need before importing.
 

@@ -5,7 +5,7 @@
     {"name": "HD", "query": "/^(1440p|1080p)$/", "fields": ["resolution"]},
     {"name": "SD", "query": "/^(720p|576p|480p)$/", "fields": ["resolution"]},
     {"name": "HDR", "query": "/HDR|\\bDV\\b|HLG/", "fields": ["visualTags"]},
-    {"name": "SDR", "query": "/- SDR\\b|\\bSDR\\b/", "fields": ["description", "visualTags"]},
+    {"name": "SDR", "query": "/^(?!.*(HDR|\\bDV\\b|\\bDoVi\\b|HLG|Dolby[ ._-]?Vision)).+$/", "fields": ["filename"]},
     {"name": "IMAX", "query": "/\\bimax\\b/", "fields": ["visualTags", "editions", "filename"]},
     {"name": "Extended", "query": "/extended|director|unrated|uncut|ultimate|special[ ._-]?edition|final[ ._-]?cut|redux/", "fields": ["editions", "filename"]},
     {"name": "VF", "query": "/^(French|Multi)$|\\b(TRUEFRENCH|FRENCH|VFF|VFQ|VFI|VF2|MULTI)\\b/", "fields": ["languages", "filename", "folderName"]}

@@ -16,7 +16,7 @@
     {"label": "HDR", "match": "\\bHDR(10)?\\b", "fields": ["visualTags"], "group": "hdr", "image": "https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/hdr/hdr10.png?v=6", "border": "#C6A56B"},
     {"label": "DV", "match": "\\bDV\\b", "fields": ["visualTags"], "group": "hdr", "image": "https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/hdr/dv.png?v=6", "border": "#C6A56B"},
     {"label": "HLG", "match": "^HLG$", "fields": ["visualTags"], "group": "hdr", "image": "https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/hdr/hlg.png?v=6", "border": "#8C8C8C"},
-    {"label": "SDR", "match": "^SDR$", "fields": ["visualTags"], "group": "hdr", "image": "https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/hdr/sdr.png?v=6", "border": "#8C8C8C"},
+    {"label": "SDR", "match": "^(?!.*(HDR|\\bDV\\b|\\bDoVi\\b|HLG|Dolby[ ._-]?Vision)).+$", "fields": ["filename"], "group": "hdr", "image": "https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/hdr/sdr.png?v=6", "border": "#8C8C8C"},
     {"label": "IMAX", "match": "\\bimax\\b", "fields": ["visualTags", "editions", "filename"], "color": "#EDE8DF", "border": "#4A4A4A"},
     {"label": "ATMOS", "match": "atmos", "fields": ["audioTags"], "group": "audio", "color": "#C6A56B", "border": "#C6A56B"},
     {"label": "DTS:X", "match": "dts[:-]?x", "fields": ["audioTags"], "group": "audio", "color": "#C6A56B", "border": "#4A4A4A"},
