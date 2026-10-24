@@ -5,7 +5,7 @@ Codec and dynamic range are two-line image badges: a filled top block with
 the name cut out, the detail below a full-width rule. Everything else stays
 as native text badges.
 
-![Preview](preview.png)
+![Preview](preview-badges.png)
 
 Step by step guide: [INSTALL.md](INSTALL.md).
 Open index.html for a visual overview with copy buttons.
@@ -18,7 +18,7 @@ Open index.html for a visual overview with copy buttons.
     badges.css          custom CSS, required for the image badges
     quick-filters.json  quick filter row (T1, 4K, HD, SD, HDR, SDR, IMAX, Extended, VF)
     codec/  hdr/        images, PNG 6x + SVG
-    preview.png         preview
+    preview-badges.png  preview
 
     gold  codec: h265 av1 10bit    hdr: hdrdv dv hdr10plus hdr10
     grey  codec: h264 vp9          hdr: hlg sdr
