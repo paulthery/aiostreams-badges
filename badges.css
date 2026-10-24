@@ -17,6 +17,7 @@ img[data-ui='version-badge'] {
 }
 [data-ui='version-badge'] > img {
   height: 100% !important;
+  border-radius: 0 !important;
   width: auto !important;
   max-height: none !important;
   display: block;
