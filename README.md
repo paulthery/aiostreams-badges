@@ -7,10 +7,12 @@ as native text badges.
 
 ![Preview](preview.png)
 
+Step by step guide: [INSTALL.md](INSTALL.md).
 Open index.html for a visual overview with copy buttons.
 
 ## Files
 
+    INSTALL.md          step by step install, checks, troubleshooting
     index.html          overview page: preview, install, copy buttons
     badges.json         full badge set (47 badges)
     badges.css          custom CSS, required for the image badges
