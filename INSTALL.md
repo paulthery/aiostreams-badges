@@ -35,7 +35,7 @@ the radius.
 2. Delete existing filters (import appends).
 3. Paste `quick-filters.json` in Import, click Import, then Save.
 
-Filters: T1, 4K, HD, SD, HDR, SDR, IMAX, Cuts, VF.
+Filters: T1, 4K, HD, SD, HDR, SDR, IMAX, Extended, VF.
 
 ## 4. Formatter (optional)
 
@@ -128,8 +128,8 @@ the first match, in this order:
     THEATRICAL    editions
 
 Separate badges, shown alongside: REMASTERED (Remastered, Restored,
-Restoration), IMAX, CRITERION, OPEN MATTE. The Cuts quick filter catches
-every longer or alternate cut (FINAL CUT to TV CUT).
+Restoration), IMAX, CRITERION, OPEN MATTE. The Extended quick filter catches
+every cut and edition above except THEATRICAL.
 
 Parsed editions are read first, so titles such as Uncut Gems, Paper Cut
 or The Final Cut (2004) do not trigger. The badges trust the file name:

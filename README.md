@@ -16,7 +16,7 @@ Open index.html for a visual overview with copy buttons.
     index.html          overview page: preview, install, copy buttons
     badges.json         full badge set (70 badges)
     badges.css          custom CSS, required for the image badges
-    quick-filters.json  quick filter row (T1, 4K, HD, SD, HDR, SDR, IMAX, Cuts, VF)
+    quick-filters.json  quick filter row (T1, 4K, HD, SD, HDR, SDR, IMAX, Extended, VF)
     formatter/          name.txt (official title), name-alt.txt (file title),
                         description.txt
     codec/  hdr/        images, PNG 6x + SVG
