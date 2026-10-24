@@ -17,7 +17,7 @@ p{color:#bdb8af;margin:0 0 12px;max-width:68ch}
 .row{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:18px}
 .cell{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
-.tb{display:inline-flex;align-items:center;height:20px;padding:0 6px;border:1px solid;border-radius:2px;font:600 11px Inter,sans-serif;letter-spacing:.04em}
+.tb{display:inline-flex;align-items:center;height:22px;padding:0 6px;border:1px solid;border-radius:5px;font:600 11px Inter,sans-serif;letter-spacing:.04em}
 .ib{display:inline-flex;height:var(--h);border:var(--bw) solid var(--c);border-radius:var(--r);overflow:hidden}
 .ib img{height:100%;width:auto;display:block}
 .vt{font-size:15px;margin:0 0 2px} .vs{font-size:13px;color:var(--muted);margin:0 0 8px}
@@ -42,7 +42,7 @@ footer{margin-top:64px;color:#5A5A5A;font-size:12px}
 <div class="card">
   <p class="vt">Film Title &middot; 2024</p>
   <p class="vs">2h45 &middot; Addon &middot; 69.03 GB</p>
-  <div class="row"><span class="tb" style="color:#0E0E0E;border-color:#EDE8DF;background:#EDE8DF">4K</span><span class="tb" style="color:#C6A56B;border-color:#C6A56B;background:transparent">REMUX</span><span class="ib" style="--c:#C6A56B;--h:20px;--bw:1px;--r:2px"><img src="hdr/hdrdv.png" alt="HDR+DV"></span><span class="tb" style="color:#C6A56B;border-color:#C6A56B;background:transparent">ATMOS</span><span class="tb" style="color:#8C8C8C;border-color:#2E2E2E;background:transparent">7.1</span><span class="ib" style="--c:#C6A56B;--h:20px;--bw:1px;--r:2px"><img src="codec/h265.png" alt="H.265"></span><span class="ib" style="--c:#C6A56B;--h:20px;--bw:1px;--r:2px"><img src="codec/10bit.png" alt="10-BIT"></span><span class="tb" style="color:#EDE8DF;border-color:#2A2723;background:#2A2723">VO</span><span class="tb" style="color:#0E0E0E;border-color:#8C8C8C;background:#8C8C8C">RD</span></div>
+  <div class="row"><span class="tb" style="color:#0E0E0E;border-color:#EDE8DF;background:#EDE8DF">4K</span><span class="tb" style="color:#C6A56B;border-color:#C6A56B;background:transparent">REMUX</span><span class="ib" style="--c:#C6A56B;--h:22px;--bw:1px;--r:5px"><img src="hdr/hdrdv.png" alt="HDR+DV"></span><span class="tb" style="color:#C6A56B;border-color:#C6A56B;background:transparent">ATMOS</span><span class="tb" style="color:#8C8C8C;border-color:#2E2E2E;background:transparent">7.1</span><span class="ib" style="--c:#C6A56B;--h:22px;--bw:1px;--r:5px"><img src="codec/h265.png" alt="H.265"></span><span class="ib" style="--c:#C6A56B;--h:22px;--bw:1px;--r:5px"><img src="codec/10bit.png" alt="10-BIT"></span><span class="tb" style="color:#EDE8DF;border-color:#2A2723;background:#2A2723">VO</span><span class="tb" style="color:#0E0E0E;border-color:#8C8C8C;background:#8C8C8C">RD</span></div>
 </div>
 
 <h2>Image badges</h2>
@@ -113,10 +113,11 @@ footer{margin-top:64px;color:#5A5A5A;font-size:12px}
   ]
 }</pre></div>
 <div class="blk"><h3>badges.css</h3><button data-t="c">Copy</button><pre id="c">/* AIOStreams image badges: the app draws the frame, the image fills it.
-   One height for every badge (text and image) so they always match.
+   One height and one corner radius for every badge (text and image).
    Settings &gt; Theme &gt; Custom CSS &gt; paste at the end &gt; Apply CSS &gt; Keep. */
 [data-ui=&#x27;version-badge&#x27;] {
   height: 1.375rem !important;
+  border-radius: 5px !important;
   box-sizing: border-box !important;
 }
 img[data-ui=&#x27;version-badge&#x27;] {
