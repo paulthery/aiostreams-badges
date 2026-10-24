@@ -3,7 +3,8 @@
 Everything happens in the AIOStreams app (desktop or web). Badges, quick
 filters and custom CSS do not exist in Stremio.
 
-Files used: `badges.json`, `badges.css`, `quick-filters.json`.
+Files used: `badges.json`, `badges.css`, `quick-filters.json`, and
+optionally `formatter/name.txt` and `formatter/description.txt`.
 Images load from this repository; nothing to host.
 
 ## 1. Badges
@@ -36,11 +37,28 @@ the radius.
 
 Filters: T1, 4K, HD, SD, HDR, SDR, IMAX, Extended, VF.
 
-## 4. Relaunch
+## 4. Formatter (optional)
+
+A short formatter: the badges carry the technical info, the text keeps
+title, year, duration, source addon and size.
+
+    Film Title . 2023
+    2h32 . Torrentio . 62.5 GB
+
+1. In the AIOStreams config: Formatter > Formatter selection > Custom.
+2. Name Template: paste the content of `formatter/name.txt`.
+3. Description Template: paste the content of `formatter/description.txt`.
+4. Save the config.
+
+The separator is a middle dot (U+00B7); copy it from the files, not from
+this page. Duration only shows when the source addon provides it (some
+addons, such as Lumio, do not); the group is skipped when it is empty.
+
+## 5. Relaunch
 
 Quit the app completely and open it again so the images load.
 
-## 5. Check
+## 6. Check
 
 Settings > Playback > Versions > Badges > Edit > Try them. Paste:
 

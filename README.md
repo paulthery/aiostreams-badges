@@ -17,6 +17,7 @@ Open index.html for a visual overview with copy buttons.
     badges.json         full badge set (47 badges)
     badges.css          custom CSS, required for the image badges
     quick-filters.json  quick filter row (T1, 4K, HD, SD, HDR, SDR, IMAX, Extended, VF)
+    formatter/          name.txt and description.txt, short custom formatter
     codec/  hdr/        images, PNG 6x + SVG
     preview-badges.png  preview
 
@@ -34,7 +35,10 @@ Open index.html for a visual overview with copy buttons.
    same height and corner radius and makes the image fill the frame.
 3. Quick filters: Settings > Playback > Versions > Quick filters > Edit.
    Delete existing filters, paste quick-filters.json in Import, Save.
-4. Quit and relaunch the app (Cmd+Q) so images reload.
+4. Formatter (optional): AIOStreams config > Formatter > Custom. Paste
+   formatter/name.txt in Name Template and formatter/description.txt in
+   Description Template, save.
+5. Quit and relaunch the app (Cmd+Q) so images reload.
 
 The CSS cannot live inside badges.json: the badge format has no CSS field.
 

@@ -56,6 +56,7 @@ footer{margin-top:64px;color:#5A5A5A;font-size:12px}
 <li>Badges: Settings &gt; Playback &gt; Versions &gt; Badges &gt; Edit. Delete all existing badges, paste badges.json in Import, click Import, then Save. The row should read "47 badges of your own".</li>
 <li>CSS: Settings &gt; Theme &gt; Custom CSS. Paste badges.css at the end, Apply CSS, then Keep within 15 s. Required for the image badges (same height and radius as text badges).</li>
 <li>Quick filters: Settings &gt; Playback &gt; Versions &gt; Quick filters &gt; Edit. Delete existing filters, paste quick-filters.json in Import, Save.</li>
+<li>Formatter (optional): AIOStreams config &gt; Formatter &gt; Custom. Paste the name and description templates below, save.</li>
 <li>Quit and relaunch the app so images reload.</li>
 </ol>
 <p>T1, T2, T3 and LQ need the Vidhin ranked stream expressions. RD, TB, AD and EN need four ranked stream expressions named "Ready RD", "Ready TB", "Ready AD", "Ready EN" (see README). Remove badges you do not use before importing.</p>
@@ -154,6 +155,9 @@ img[data-ui=&#x27;version-badge&#x27;] {
     {&quot;name&quot;: &quot;VF&quot;, &quot;query&quot;: &quot;/^(French|Multi)$|\\b(TRUEFRENCH|FRENCH|VFF|VFQ|VFI|VF2|MULTI)\\b/&quot;, &quot;fields&quot;: [&quot;languages&quot;, &quot;filename&quot;, &quot;folderName&quot;]}
   ]
 }</pre></div>
+
+<div class="blk"><h3>Formatter: name template</h3><button data-t="fn">Copy</button><pre id="fn">{stream.title::title}{? &#183; {stream.year}?}</pre></div>
+<div class="blk"><h3>Formatter: description template</h3><button data-t="fd">Copy</button><pre id="fd">{?{stream.duration::time(&#x27;%-Hh%M&#x27;)} &#183; ?}{addon.name}{? &#183; {stream.size::bytes}?}</pre></div>
 
 <footer>Typeface Inter. Gold #C6A56B, grey #8C8C8C. Images: github.com/paulthery/aiostreams-badges</footer>
 </main>
