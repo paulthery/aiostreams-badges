@@ -56,8 +56,11 @@ title, year, duration, source addon and size.
 4. Save the config.
 
 The separator is a middle dot (U+00B7); copy it from the files, not from
-this page. Duration only shows when the source addon provides it (some
-addons, such as Lumio, do not); the group is skipped when it is empty.
+this page. Duration: the file's own duration when the source addon gives
+it; otherwise the official runtime from the metadata (movie runtime, or
+episode runtime for series); nothing if neither exists. The fallback is
+the theatrical runtime, so an extended cut from an addon without duration
+(such as Lumio) shows the shorter time; the EXTENDED badge still marks it.
 
 ## 5. Relaunch
 

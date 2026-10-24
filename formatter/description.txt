@@ -1,1 +1,1 @@
-{?{stream.duration::time('%-Hh%M')} · ?}{addon.name}{? · {stream.size::bytes}?}
+{stream.duration::exists["{stream.duration::time('%-Hh%M')} · "||"{metadata.runtime::exists["{metadata.runtime::time('%-Hh%M')} · "||"{metadata.episodeRuntime::exists["{metadata.episodeRuntime::time('%-Hh%M')} · "||""]}"]}"]}{addon.name}{? · {stream.size::bytes}?}
