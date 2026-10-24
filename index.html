@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIOStreams Badges</title>
+<style>
+:root{--bg:#0E0E0E;--paper:#161616;--line:#2E2E2E;--ink:#EDE8DF;--muted:#8C8C8C;--gold:#C6A56B}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,-apple-system,"Helvetica Neue",sans-serif}
+main{max-width:980px;margin:0 auto;padding:56px 16px 80px}
+h1{font-size:28px;font-weight:600;letter-spacing:-.01em;margin:0 0 6px}
+h2{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:56px 0 16px}
+p{color:#bdb8af;margin:0 0 12px;max-width:68ch}
+.lead{color:var(--muted)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:20px}
+.row{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:18px}
+.cell{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.tb{display:inline-flex;align-items:center;height:20px;padding:0 6px;border:1px solid;border-radius:2px;font:600 11px Inter,sans-serif;letter-spacing:.04em}
+.ib{display:inline-flex;height:var(--h);border:var(--bw) solid var(--c);border-radius:var(--r);overflow:hidden}
+.ib img{height:100%;width:auto;display:block}
+.vt{font-size:15px;margin:0 0 2px} .vs{font-size:13px;color:var(--muted);margin:0 0 8px}
+code{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted)}
+ol{padding-left:20px;color:#bdb8af} li{margin:6px 0}
+.blk{position:relative;margin:0 0 20px}
+.blk h3{font-size:14px;font-weight:600;margin:0 0 8px}
+pre{margin:0;background:#0A0A0A;border:1px solid var(--line);border-radius:6px;padding:14px;overflow:auto;max-height:340px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:#cfcac1}
+button{position:absolute;top:0;right:0;background:none;border:1px solid var(--line);color:var(--ink);border-radius:4px;font:500 12px Inter,sans-serif;padding:4px 10px;cursor:pointer}
+button:hover{border-color:var(--gold);color:var(--gold)}
+.legend{display:flex;gap:20px;color:var(--muted);font-size:13px;margin-top:14px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+footer{margin-top:64px;color:#5A5A5A;font-size:12px}
+</style>
+</head>
+<body>
+<main>
+<h1>AIOStreams Badges</h1>
+<p class="lead">Version badges for the AIOStreams app. Codec and dynamic range as two-line image badges, everything else as native text badges.</p>
+
+<h2>In the version list</h2>
+<div class="card">
+  <p class="vt">Film Title &middot; 2024</p>
+  <p class="vs">2h45 &middot; Addon &middot; 69.03 GB</p>
+  <div class="row"><span class="tb" style="color:#0E0E0E;border-color:#EDE8DF;background:#EDE8DF">4K</span><span class="tb" style="color:#C6A56B;border-color:#C6A56B;background:transparent">REMUX</span><span class="ib" style="--c:#C6A56B;--h:20px;--bw:1px;--r:2px"><img src="hdr/hdrdv.png" alt="HDR+DV"></span><span class="tb" style="color:#C6A56B;border-color:#C6A56B;background:transparent">ATMOS</span><span class="tb" style="color:#8C8C8C;border-color:#2E2E2E;background:transparent">7.1</span><span class="ib" style="--c:#C6A56B;--h:20px;--bw:1px;--r:2px"><img src="codec/h265.png" alt="H.265"></span><span class="ib" style="--c:#C6A56B;--h:20px;--bw:1px;--r:2px"><img src="codec/10bit.png" alt="10-BIT"></span><span class="tb" style="color:#EDE8DF;border-color:#2A2723;background:#2A2723">VO</span><span class="tb" style="color:#0E0E0E;border-color:#8C8C8C;background:#8C8C8C">RD</span></div>
+</div>
+
+<h2>Image badges</h2>
+<div class="card">
+  <div class="grid"><div class="cell"><span class="ib" style="--c:#C6A56B;--h:64px;--bw:2px;--r:4px"><img src="hdr/hdrdv.png" alt="HDR+DV"></span><code>hdr/hdrdv.png</code></div><div class="cell"><span class="ib" style="--c:#C6A56B;--h:64px;--bw:2px;--r:4px"><img src="hdr/hdr10plus.png" alt="HDR10+"></span><code>hdr/hdr10plus.png</code></div><div class="cell"><span class="ib" style="--c:#C6A56B;--h:64px;--bw:2px;--r:4px"><img src="hdr/hdr10.png" alt="HDR10"></span><code>hdr/hdr10.png</code></div><div class="cell"><span class="ib" style="--c:#C6A56B;--h:64px;--bw:2px;--r:4px"><img src="hdr/dv.png" alt="DV"></span><code>hdr/dv.png</code></div><div class="cell"><span class="ib" style="--c:#8C8C8C;--h:64px;--bw:2px;--r:4px"><img src="hdr/hlg.png" alt="HLG"></span><code>hdr/hlg.png</code></div><div class="cell"><span class="ib" style="--c:#8C8C8C;--h:64px;--bw:2px;--r:4px"><img src="hdr/sdr.png" alt="SDR"></span><code>hdr/sdr.png</code></div><div class="cell"><span class="ib" style="--c:#C6A56B;--h:64px;--bw:2px;--r:4px"><img src="codec/h265.png" alt="H.265"></span><code>codec/h265.png</code></div><div class="cell"><span class="ib" style="--c:#C6A56B;--h:64px;--bw:2px;--r:4px"><img src="codec/av1.png" alt="AV1"></span><code>codec/av1.png</code></div><div class="cell"><span class="ib" style="--c:#C6A56B;--h:64px;--bw:2px;--r:4px"><img src="codec/10bit.png" alt="10-BIT"></span><code>codec/10bit.png</code></div><div class="cell"><span class="ib" style="--c:#8C8C8C;--h:64px;--bw:2px;--r:4px"><img src="codec/h264.png" alt="H.264"></span><code>codec/h264.png</code></div><div class="cell"><span class="ib" style="--c:#8C8C8C;--h:64px;--bw:2px;--r:4px"><img src="codec/vp9.png" alt="VP9"></span><code>codec/vp9.png</code></div></div>
+  <div class="legend"><span><i class="dot" style="background:#C6A56B"></i>Gold: optimal</span><span><i class="dot" style="background:#8C8C8C"></i>Grey: acceptable</span></div>
+</div>
+
+<h2>Install</h2>
+<ol>
+<li>Badges: Settings &gt; Playback &gt; Versions &gt; Badges &gt; Edit. Delete all existing badges, paste the badges JSON in Import, click Import, then Save. The row should read "47 badges of your own".</li>
+<li>CSS: Settings &gt; Theme &gt; Custom CSS. Paste the CSS at the end, Apply CSS, then Keep within 15 s. Required for the image badges.</li>
+<li>Quick filters: Settings &gt; Playback &gt; Versions &gt; Quick filters &gt; Edit. Delete existing filters, paste the JSON in Import, Save.</li>
+<li>Quit and relaunch the app so images reload.</li>
+</ol>
+<p>T1, T2, T3 and LQ need the Vidhin ranked stream expressions. RD, TB, AD and EN need four ranked stream expressions named "Ready RD", "Ready TB", "Ready AD", "Ready EN" (see README). Remove badges you do not use before importing.</p>
+
+<h2>Files</h2>
+<div class="blk"><h3>badges.json</h3><button data-t="b">Copy</button><pre id="b">{
+  &quot;badges&quot;: [
+    {&quot;label&quot;: &quot;T1&quot;, &quot;match&quot;: &quot;\\bT1$&quot;, &quot;fields&quot;: [&quot;rseMatched&quot;], &quot;group&quot;: &quot;tier&quot;, &quot;color&quot;: &quot;#0E0E0E&quot;, &quot;background&quot;: &quot;#C6A56B&quot;, &quot;border&quot;: &quot;#C6A56B&quot;},
+    {&quot;label&quot;: &quot;T2&quot;, &quot;match&quot;: &quot;\\bT2$&quot;, &quot;fields&quot;: [&quot;rseMatched&quot;], &quot;group&quot;: &quot;tier&quot;, &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;border&quot;: &quot;#EDE8DF&quot;},
+    {&quot;label&quot;: &quot;T3&quot;, &quot;match&quot;: &quot;\\bT3$&quot;, &quot;fields&quot;: [&quot;rseMatched&quot;], &quot;group&quot;: &quot;tier&quot;, &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#4A4A4A&quot;},
+    {&quot;label&quot;: &quot;LQ&quot;, &quot;match&quot;: &quot;^(LQ|LQ Title|Anime LQ|Asian LQ|Upscaled|FR FastSUB|FR LQ .*)$&quot;, &quot;fields&quot;: [&quot;rseMatched&quot;], &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#8C8C8C&quot;},
+    {&quot;label&quot;: &quot;4K&quot;, &quot;match&quot;: &quot;^(2160p|4k)$&quot;, &quot;fields&quot;: [&quot;resolution&quot;], &quot;group&quot;: &quot;res&quot;, &quot;color&quot;: &quot;#0E0E0E&quot;, &quot;background&quot;: &quot;#EDE8DF&quot;, &quot;border&quot;: &quot;#EDE8DF&quot;},
+    {&quot;label&quot;: &quot;1080&quot;, &quot;match&quot;: &quot;^1080p$&quot;, &quot;fields&quot;: [&quot;resolution&quot;], &quot;group&quot;: &quot;res&quot;, &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;border&quot;: &quot;#EDE8DF&quot;},
+    {&quot;label&quot;: &quot;720&quot;, &quot;match&quot;: &quot;^720p$&quot;, &quot;fields&quot;: [&quot;resolution&quot;], &quot;group&quot;: &quot;res&quot;, &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#4A4A4A&quot;},
+    {&quot;label&quot;: &quot;REMUX&quot;, &quot;match&quot;: &quot;remux&quot;, &quot;fields&quot;: [&quot;quality&quot;], &quot;group&quot;: &quot;src&quot;, &quot;color&quot;: &quot;#C6A56B&quot;, &quot;border&quot;: &quot;#C6A56B&quot;},
+    {&quot;label&quot;: &quot;BLURAY&quot;, &quot;match&quot;: &quot;^blu-?ray$&quot;, &quot;fields&quot;: [&quot;quality&quot;], &quot;group&quot;: &quot;src&quot;, &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;border&quot;: &quot;#4A4A4A&quot;},
+    {&quot;label&quot;: &quot;WEB-DL&quot;, &quot;match&quot;: &quot;^web-?dl$&quot;, &quot;fields&quot;: [&quot;quality&quot;], &quot;group&quot;: &quot;src&quot;, &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#4A4A4A&quot;},
+    {&quot;label&quot;: &quot;WEBRIP&quot;, &quot;match&quot;: &quot;^web-?rip$&quot;, &quot;fields&quot;: [&quot;quality&quot;], &quot;group&quot;: &quot;src&quot;, &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#4A4A4A&quot;},
+    {&quot;label&quot;: &quot;HDR+DV&quot;, &quot;match&quot;: &quot;HDR\\+DV|(?=.*\\bHDR)(?=.*\\bDV\\b)&quot;, &quot;fields&quot;: [&quot;visualTags&quot;], &quot;group&quot;: &quot;hdr&quot;, &quot;image&quot;: &quot;https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/hdr/hdrdv.png?v=5&quot;, &quot;border&quot;: &quot;#C6A56B&quot;},
+    {&quot;label&quot;: &quot;HDR10+&quot;, &quot;match&quot;: &quot;HDR10\\+&quot;, &quot;fields&quot;: [&quot;visualTags&quot;], &quot;group&quot;: &quot;hdr&quot;, &quot;image&quot;: &quot;https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/hdr/hdr10plus.png?v=5&quot;, &quot;border&quot;: &quot;#C6A56B&quot;},
+    {&quot;label&quot;: &quot;HDR&quot;, &quot;match&quot;: &quot;\\bHDR(10)?\\b&quot;, &quot;fields&quot;: [&quot;visualTags&quot;], &quot;group&quot;: &quot;hdr&quot;, &quot;image&quot;: &quot;https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/hdr/hdr10.png?v=5&quot;, &quot;border&quot;: &quot;#C6A56B&quot;},
+    {&quot;label&quot;: &quot;DV&quot;, &quot;match&quot;: &quot;\\bDV\\b&quot;, &quot;fields&quot;: [&quot;visualTags&quot;], &quot;group&quot;: &quot;hdr&quot;, &quot;image&quot;: &quot;https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/hdr/dv.png?v=5&quot;, &quot;border&quot;: &quot;#C6A56B&quot;},
+    {&quot;label&quot;: &quot;HLG&quot;, &quot;match&quot;: &quot;^HLG$&quot;, &quot;fields&quot;: [&quot;visualTags&quot;], &quot;group&quot;: &quot;hdr&quot;, &quot;image&quot;: &quot;https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/hdr/hlg.png?v=5&quot;, &quot;border&quot;: &quot;#8C8C8C&quot;},
+    {&quot;label&quot;: &quot;SDR&quot;, &quot;match&quot;: &quot;^SDR$&quot;, &quot;fields&quot;: [&quot;visualTags&quot;], &quot;group&quot;: &quot;hdr&quot;, &quot;image&quot;: &quot;https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/hdr/sdr.png?v=5&quot;, &quot;border&quot;: &quot;#8C8C8C&quot;},
+    {&quot;label&quot;: &quot;IMAX&quot;, &quot;match&quot;: &quot;\\bimax\\b&quot;, &quot;fields&quot;: [&quot;visualTags&quot;, &quot;editions&quot;, &quot;filename&quot;], &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;border&quot;: &quot;#4A4A4A&quot;},
+    {&quot;label&quot;: &quot;ATMOS&quot;, &quot;match&quot;: &quot;atmos&quot;, &quot;fields&quot;: [&quot;audioTags&quot;], &quot;group&quot;: &quot;audio&quot;, &quot;color&quot;: &quot;#C6A56B&quot;, &quot;border&quot;: &quot;#C6A56B&quot;},
+    {&quot;label&quot;: &quot;DTS:X&quot;, &quot;match&quot;: &quot;dts[:-]?x&quot;, &quot;fields&quot;: [&quot;audioTags&quot;], &quot;group&quot;: &quot;audio&quot;, &quot;color&quot;: &quot;#C6A56B&quot;, &quot;border&quot;: &quot;#4A4A4A&quot;},
+    {&quot;label&quot;: &quot;TRUEHD&quot;, &quot;match&quot;: &quot;truehd&quot;, &quot;fields&quot;: [&quot;audioTags&quot;], &quot;group&quot;: &quot;audio&quot;, &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;border&quot;: &quot;#4A4A4A&quot;},
+    {&quot;label&quot;: &quot;DTS-HD MA&quot;, &quot;match&quot;: &quot;dts-hd ?ma&quot;, &quot;fields&quot;: [&quot;audioTags&quot;], &quot;group&quot;: &quot;audio&quot;, &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;border&quot;: &quot;#4A4A4A&quot;},
+    {&quot;label&quot;: &quot;DD+&quot;, &quot;match&quot;: &quot;^dd\\+$&quot;, &quot;fields&quot;: [&quot;audioTags&quot;], &quot;group&quot;: &quot;audio&quot;, &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#4A4A4A&quot;},
+    {&quot;label&quot;: &quot;7.1&quot;, &quot;match&quot;: &quot;^7\\.1$&quot;, &quot;fields&quot;: [&quot;audioChannels&quot;], &quot;group&quot;: &quot;ch&quot;, &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#2E2E2E&quot;},
+    {&quot;label&quot;: &quot;5.1&quot;, &quot;match&quot;: &quot;^5\\.1$&quot;, &quot;fields&quot;: [&quot;audioChannels&quot;], &quot;group&quot;: &quot;ch&quot;, &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#2E2E2E&quot;},
+    {&quot;label&quot;: &quot;HEVC&quot;, &quot;match&quot;: &quot;^(HEVC|H\\.?265|x265)$&quot;, &quot;fields&quot;: [&quot;encode&quot;], &quot;group&quot;: &quot;enc&quot;, &quot;image&quot;: &quot;https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/codec/h265.png?v=5&quot;, &quot;border&quot;: &quot;#C6A56B&quot;},
+    {&quot;label&quot;: &quot;AV1&quot;, &quot;match&quot;: &quot;^AV1$&quot;, &quot;fields&quot;: [&quot;encode&quot;], &quot;group&quot;: &quot;enc&quot;, &quot;image&quot;: &quot;https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/codec/av1.png?v=5&quot;, &quot;border&quot;: &quot;#C6A56B&quot;},
+    {&quot;label&quot;: &quot;H.264&quot;, &quot;match&quot;: &quot;^(AVC|H\\.?264|x264)$&quot;, &quot;fields&quot;: [&quot;encode&quot;], &quot;group&quot;: &quot;enc&quot;, &quot;image&quot;: &quot;https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/codec/h264.png?v=5&quot;, &quot;border&quot;: &quot;#8C8C8C&quot;},
+    {&quot;label&quot;: &quot;VP9&quot;, &quot;match&quot;: &quot;^VP9$&quot;, &quot;fields&quot;: [&quot;encode&quot;], &quot;group&quot;: &quot;enc&quot;, &quot;image&quot;: &quot;https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/codec/vp9.png?v=5&quot;, &quot;border&quot;: &quot;#8C8C8C&quot;},
+    {&quot;label&quot;: &quot;10BIT&quot;, &quot;match&quot;: &quot;\\b10[ ._-]?bit\\b&quot;, &quot;fields&quot;: [&quot;filename&quot;], &quot;image&quot;: &quot;https://raw.githubusercontent.com/paulthery/aiostreams-badges/main/codec/10bit.png?v=5&quot;, &quot;border&quot;: &quot;#C6A56B&quot;},
+    {&quot;label&quot;: &quot;VFF&quot;, &quot;match&quot;: &quot;\\b(TRUEFRENCH|VFF|VF2)\\b&quot;, &quot;fields&quot;: [&quot;filename&quot;, &quot;folderName&quot;], &quot;group&quot;: &quot;fr&quot;, &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;background&quot;: &quot;#2A2723&quot;, &quot;border&quot;: &quot;#2A2723&quot;},
+    {&quot;label&quot;: &quot;VFQ&quot;, &quot;match&quot;: &quot;\\b(VFQ|VQ)\\b&quot;, &quot;fields&quot;: [&quot;filename&quot;, &quot;folderName&quot;], &quot;group&quot;: &quot;fr&quot;, &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;background&quot;: &quot;#2A2723&quot;, &quot;border&quot;: &quot;#2A2723&quot;},
+    {&quot;label&quot;: &quot;VF&quot;, &quot;match&quot;: &quot;^French$&quot;, &quot;fields&quot;: [&quot;languages&quot;], &quot;group&quot;: &quot;fr&quot;, &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;background&quot;: &quot;#2A2723&quot;, &quot;border&quot;: &quot;#2A2723&quot;},
+    {&quot;label&quot;: &quot;VOSTFR&quot;, &quot;match&quot;: &quot;\\b(VOST(FR)?|SUBFRENCH)\\b&quot;, &quot;fields&quot;: [&quot;filename&quot;, &quot;folderName&quot;], &quot;group&quot;: &quot;fr&quot;, &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;background&quot;: &quot;#1C1B19&quot;, &quot;border&quot;: &quot;#1C1B19&quot;},
+    {&quot;label&quot;: &quot;VF+VO&quot;, &quot;match&quot;: &quot;\\bmulti\\b|^dual audio$&quot;, &quot;fields&quot;: [&quot;languages&quot;, &quot;filename&quot;, &quot;folderName&quot;], &quot;group&quot;: &quot;lang&quot;, &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;background&quot;: &quot;#2A2723&quot;, &quot;border&quot;: &quot;#2A2723&quot;},
+    {&quot;label&quot;: &quot;VO&quot;, &quot;match&quot;: &quot;^(English|Original)$&quot;, &quot;fields&quot;: [&quot;languages&quot;], &quot;group&quot;: &quot;lang&quot;, &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;background&quot;: &quot;#2A2723&quot;, &quot;border&quot;: &quot;#2A2723&quot;},
+    {&quot;label&quot;: &quot;DIR CUT&quot;, &quot;match&quot;: &quot;director&quot;, &quot;fields&quot;: [&quot;editions&quot;], &quot;group&quot;: &quot;ed&quot;, &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#2E2E2E&quot;},
+    {&quot;label&quot;: &quot;EXTENDED&quot;, &quot;match&quot;: &quot;extended&quot;, &quot;fields&quot;: [&quot;editions&quot;], &quot;group&quot;: &quot;ed&quot;, &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#2E2E2E&quot;},
+    {&quot;label&quot;: &quot;REMASTERED&quot;, &quot;match&quot;: &quot;remaster&quot;, &quot;fields&quot;: [&quot;editions&quot;], &quot;group&quot;: &quot;ed&quot;, &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#2E2E2E&quot;},
+    {&quot;label&quot;: &quot;CRITERION&quot;, &quot;match&quot;: &quot;\\b(criterion|CC)\\b&quot;, &quot;fields&quot;: [&quot;filename&quot;, &quot;folderName&quot;], &quot;color&quot;: &quot;#C6A56B&quot;, &quot;border&quot;: &quot;#4A4A4A&quot;},
+    {&quot;label&quot;: &quot;OPEN MATTE&quot;, &quot;match&quot;: &quot;open[ ._-]?matte&quot;, &quot;fields&quot;: [&quot;filename&quot;, &quot;folderName&quot;], &quot;color&quot;: &quot;#EDE8DF&quot;, &quot;border&quot;: &quot;#2E2E2E&quot;},
+    {&quot;label&quot;: &quot;PROPER&quot;, &quot;match&quot;: &quot;\\b(repack|proper|rerip)\\d?\\b&quot;, &quot;fields&quot;: [&quot;filename&quot;], &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#2E2E2E&quot;},
+    {&quot;label&quot;: &quot;PACK&quot;, &quot;match&quot;: &quot;\\bS\\d{1,2}\\b(?![ ._-]?E\\d)|\\bcomplete\\b|\\bintegrale?\\b&quot;, &quot;fields&quot;: [&quot;filename&quot;, &quot;folderName&quot;], &quot;color&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#2E2E2E&quot;},
+    {&quot;label&quot;: &quot;RD&quot;, &quot;match&quot;: &quot;^Ready RD$&quot;, &quot;fields&quot;: [&quot;rseMatched&quot;], &quot;group&quot;: &quot;svc&quot;, &quot;color&quot;: &quot;#0E0E0E&quot;, &quot;background&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#8C8C8C&quot;},
+    {&quot;label&quot;: &quot;TB&quot;, &quot;match&quot;: &quot;^Ready TB$&quot;, &quot;fields&quot;: [&quot;rseMatched&quot;], &quot;group&quot;: &quot;svc&quot;, &quot;color&quot;: &quot;#0E0E0E&quot;, &quot;background&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#8C8C8C&quot;},
+    {&quot;label&quot;: &quot;AD&quot;, &quot;match&quot;: &quot;^Ready AD$&quot;, &quot;fields&quot;: [&quot;rseMatched&quot;], &quot;group&quot;: &quot;svc&quot;, &quot;color&quot;: &quot;#0E0E0E&quot;, &quot;background&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#8C8C8C&quot;},
+    {&quot;label&quot;: &quot;EN&quot;, &quot;match&quot;: &quot;^Ready EN$&quot;, &quot;fields&quot;: [&quot;rseMatched&quot;], &quot;group&quot;: &quot;svc&quot;, &quot;color&quot;: &quot;#0E0E0E&quot;, &quot;background&quot;: &quot;#8C8C8C&quot;, &quot;border&quot;: &quot;#8C8C8C&quot;}
+  ]
+}</pre></div>
+<div class="blk"><h3>badges.css</h3><button data-t="c">Copy</button><pre id="c">/* AIOStreams image badges: the app draws the frame, the image fills it.
+   Settings &gt; Theme &gt; Custom CSS &gt; paste at the end &gt; Apply CSS &gt; Keep. */
+img[data-ui=&#x27;version-badge&#x27;] {
+  height: 1.25rem !important;
+  width: auto !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  display: block;
+}
+[data-ui=&#x27;version-badge&#x27;]:has(&gt; img) {
+  height: 1.25rem !important;
+  padding: 0 !important;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+[data-ui=&#x27;version-badge&#x27;] &gt; img {
+  height: 100% !important;
+  width: auto !important;
+  max-height: none !important;
+  display: block;
+}
+[data-ui=&#x27;version-badges&#x27;] { align-items: center; }</pre></div>
+<div class="blk"><h3>quick-filters.json</h3><button data-t="q">Copy</button><pre id="q">{
+  &quot;quickFilters&quot;: [
+    {&quot;name&quot;: &quot;T1&quot;, &quot;query&quot;: &quot;/\\bT1$/&quot;, &quot;fields&quot;: [&quot;rseMatched&quot;]},
+    {&quot;name&quot;: &quot;4K&quot;, &quot;query&quot;: &quot;/^(2160p|4k)$/&quot;, &quot;fields&quot;: [&quot;resolution&quot;]},
+    {&quot;name&quot;: &quot;HD&quot;, &quot;query&quot;: &quot;/^(1440p|1080p)$/&quot;, &quot;fields&quot;: [&quot;resolution&quot;]},
+    {&quot;name&quot;: &quot;SD&quot;, &quot;query&quot;: &quot;/^(720p|576p|480p)$/&quot;, &quot;fields&quot;: [&quot;resolution&quot;]},
+    {&quot;name&quot;: &quot;HDR&quot;, &quot;query&quot;: &quot;/HDR|\\bDV\\b|HLG/&quot;, &quot;fields&quot;: [&quot;visualTags&quot;]},
+    {&quot;name&quot;: &quot;SDR&quot;, &quot;query&quot;: &quot;/- SDR\\b|\\bSDR\\b/&quot;, &quot;fields&quot;: [&quot;description&quot;, &quot;visualTags&quot;]},
+    {&quot;name&quot;: &quot;IMAX&quot;, &quot;query&quot;: &quot;/\\bimax\\b/&quot;, &quot;fields&quot;: [&quot;visualTags&quot;, &quot;editions&quot;, &quot;filename&quot;]},
+    {&quot;name&quot;: &quot;Extended&quot;, &quot;query&quot;: &quot;/extended|director|unrated|uncut|ultimate|special[ ._-]?edition|final[ ._-]?cut|redux/&quot;, &quot;fields&quot;: [&quot;editions&quot;, &quot;filename&quot;]},
+    {&quot;name&quot;: &quot;VF&quot;, &quot;query&quot;: &quot;/^(French|Multi)$|\\b(TRUEFRENCH|FRENCH|VFF|VFQ|VFI|VF2|MULTI)\\b/&quot;, &quot;fields&quot;: [&quot;languages&quot;, &quot;filename&quot;, &quot;folderName&quot;]}
+  ]
+}</pre></div>
+
+<footer>Typeface Inter. Gold #C6A56B, grey #8C8C8C. Images: github.com/paulthery/aiostreams-badges</footer>
+</main>
+<script>
+document.querySelectorAll('button[data-t]').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var txt=document.getElementById(btn.dataset.t).textContent;
+    function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},1400)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,fallback)}else{fallback()}
+    function fallback(){var t=document.createElement('textarea');t.value=txt;document.body.appendChild(t);t.select();try{document.execCommand('copy');done()}catch(e){}document.body.removeChild(t)}
+  });
+});
+</script>
+</body>
+</html>

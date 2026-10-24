@@ -4,22 +4,17 @@ Version badges for the AIOStreams app. Gold = optimal, grey = acceptable.
 Codec and dynamic range are image badges (two lines: name over detail).
 Everything else stays as native text badges.
 
-![V1](preview-v1.png)
-![V2](preview-v2.png)
+![Preview](preview-v1.png)
 
-## Versions
-
-    V1  gold text on transparent, thin rule across the box      badges.json
-    V2  gold top block with cut-out text, bottom as V1           badges-v2.json
+Open index.html for a visual overview with copy buttons.
 
 ## Files
 
-    badges.json         full badge set, V1 images (47 badges)
-    badges-v2.json      full badge set, V2 images
+    index.html          overview page: preview, install, copy buttons
+    badges.json         full badge set (47 badges)
     quick-filters.json  quick filter row (T1, 4K, HD, SD, HDR, SDR, IMAX, Extended, VF)
     badges.css          custom CSS, required for the image badges
-    codec/  hdr/        V1 images, PNG 6x + SVG
-    v2/codec/  v2/hdr/  V2 images, PNG 6x + SVG
+    codec/  hdr/        images, PNG 6x + SVG
 
     gold  codec: h265 av1 10bit    hdr: hdrdv dv hdr10plus hdr10
     grey  codec: h264 vp9          hdr: hlg sdr
@@ -28,7 +23,7 @@ Everything else stays as native text badges.
 
 1. Badges: Settings > Playback > Versions > Badges > Edit.
    Delete all existing badges (same label = first one wins), paste
-   badges.json or badges-v2.json in Import, click Import, then Save.
+   badges.json in Import, click Import, then Save.
    The row should read "47 badges of your own".
 2. CSS: Settings > Theme > Custom CSS. Paste badges.css at the end,
    Apply CSS, then Keep within 15 s. Without it the images render small

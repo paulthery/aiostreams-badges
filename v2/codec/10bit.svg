@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="81" height="41" viewBox="0 0 81 41">
-  <defs><mask id="k-10bit" maskUnits="userSpaceOnUse" x="0" y="0" width="81" height="41">
-    <rect width="81" height="41" fill="#fff"/>
-    <text x="40.60" y="17.71" text-anchor="middle" font-family="Inter" font-weight="700" font-size="15" letter-spacing="0.2" fill="#000">10-BIT</text>
-  </mask></defs>
-  <rect x="0" y="0" width="81" height="25.375" fill="#C6A56B" mask="url(#k-10bit)"/>
-  <text x="41.40" y="36.16" text-anchor="middle" font-family="Inter" font-weight="500" font-size="8" letter-spacing="1.8" fill="#C6A56B" opacity=".85">DEPTH</text>
-</svg>
