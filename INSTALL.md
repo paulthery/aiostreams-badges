@@ -4,7 +4,7 @@ Everything happens in the AIOStreams app (desktop or web). Badges, quick
 filters and custom CSS do not exist in Stremio.
 
 Files used: `badges.json`, `badges.css`, `quick-filters.json`, and
-optionally `formatter/name.txt` and `formatter/description.txt`.
+optionally the templates in `formatter/`.
 Images load from this repository; nothing to host.
 
 ## 1. Badges
@@ -46,7 +46,12 @@ title, year, duration, source addon and size.
     2h32 . Torrentio . 62.5 GB
 
 1. In the AIOStreams config: Formatter > Formatter selection > Custom.
-2. Name Template: paste the content of `formatter/name.txt`.
+2. Name Template: paste the content of `formatter/name.txt`. It shows the
+   official title from the film's metadata, so every version carries the
+   same clean name (no Cyrillic or misspelled file titles). Editions
+   (Extended, Director's Cut) are unaffected: they come from the badges.
+   If the name comes out empty, use `formatter/name-alt.txt` instead
+   (title read from the file name).
 3. Description Template: paste the content of `formatter/description.txt`.
 4. Save the config.
 
@@ -87,6 +92,13 @@ Not using a service or the tiers? Delete those badges before importing.
 
 SDR (badge and filter) is detected from the file name: no HDR, DV, DoVi,
 HLG or Dolby Vision marker. No formatter text needed.
+
+## Fewer foreign titles (optional)
+
+Most Cyrillic release names come from Russian trackers. In the AIOStreams
+config, Addons > Torrentio > Providers: untick RuTor and RuTracker, save.
+Do not exclude the Russian language: multi-audio remuxes with an extra
+Russian track would disappear too.
 
 ## Troubleshooting
 
