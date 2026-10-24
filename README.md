@@ -1,7 +1,7 @@
 # aiostreams-badges
 
 Image badges for AIOStreams version lists. Gold = optimal, grey = acceptable.
-Transparent PNG (4x) + SVG source, own border. Typeface: Inter.
+Borderless transparent PNG (6x) + SVG source: text and full-width rule only, framed by the app border (badge padding 0). Typeface: Inter.
 
 ## Files
 
