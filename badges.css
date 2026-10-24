@@ -1,17 +1,18 @@
 /* AIOStreams image badges: the app draws the frame, the image fills it.
+   One height for every badge (text and image) so they always match.
    Settings > Theme > Custom CSS > paste at the end > Apply CSS > Keep. */
+[data-ui='version-badge'] {
+  height: 1.375rem !important;
+  box-sizing: border-box !important;
+}
 img[data-ui='version-badge'] {
-  height: 1.25rem !important;
   width: auto !important;
   padding: 0 !important;
-  box-sizing: border-box;
   display: block;
 }
 [data-ui='version-badge']:has(> img) {
-  height: 1.25rem !important;
   padding: 0 !important;
   overflow: hidden;
-  box-sizing: border-box;
 }
 [data-ui='version-badge'] > img {
   height: 100% !important;

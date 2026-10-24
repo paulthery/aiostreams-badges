@@ -113,19 +113,20 @@ footer{margin-top:64px;color:#5A5A5A;font-size:12px}
   ]
 }</pre></div>
 <div class="blk"><h3>badges.css</h3><button data-t="c">Copy</button><pre id="c">/* AIOStreams image badges: the app draws the frame, the image fills it.
+   One height for every badge (text and image) so they always match.
    Settings &gt; Theme &gt; Custom CSS &gt; paste at the end &gt; Apply CSS &gt; Keep. */
+[data-ui=&#x27;version-badge&#x27;] {
+  height: 1.375rem !important;
+  box-sizing: border-box !important;
+}
 img[data-ui=&#x27;version-badge&#x27;] {
-  height: 1.25rem !important;
   width: auto !important;
   padding: 0 !important;
-  box-sizing: border-box;
   display: block;
 }
 [data-ui=&#x27;version-badge&#x27;]:has(&gt; img) {
-  height: 1.25rem !important;
   padding: 0 !important;
   overflow: hidden;
-  box-sizing: border-box;
 }
 [data-ui=&#x27;version-badge&#x27;] &gt; img {
   height: 100% !important;
