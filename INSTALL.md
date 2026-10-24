@@ -14,7 +14,7 @@ Images load from this repository; nothing to host.
    one wins, so old badges would hide the new ones.
 3. Open `badges.json`, copy all of it, paste it in Import.
 4. Click Import, then Save (white button, bottom right).
-5. The Badges row must read `47 badges of your own`. If not, Save was
+5. The Badges row must read `46 badges of your own`. If not, Save was
    skipped: closing with the cross or Cancel discards the import.
 
 ## 2. CSS
@@ -95,6 +95,16 @@ Not using a service or the tiers? Delete those badges before importing.
 
 SDR (badge and filter) is detected from the file name: no HDR, DV, DoVi,
 HLG or Dolby Vision marker. No formatter text needed.
+
+## Editions
+
+    EXTENDED    any longer cut: Extended, Director's Cut, Uncut, Unrated,
+                Ultimate Edition, VERSION LONGUE (French)
+    REMASTERED  Remastered, Restored, Restoration; shown alongside EXTENDED
+
+Both read the parsed editions first, so a title such as Uncut Gems does
+not trigger. The badge trusts the file name: a release mislabelled
+"Extended" still gets it. When the duration is shown, it is the check.
 
 ## Fewer foreign titles (optional)
 

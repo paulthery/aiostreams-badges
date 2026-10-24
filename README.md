@@ -14,7 +14,7 @@ Open index.html for a visual overview with copy buttons.
 
     INSTALL.md          step by step install, checks, troubleshooting
     index.html          overview page: preview, install, copy buttons
-    badges.json         full badge set (47 badges)
+    badges.json         full badge set (46 badges)
     badges.css          custom CSS, required for the image badges
     quick-filters.json  quick filter row (T1, 4K, HD, SD, HDR, SDR, IMAX, Extended, VF)
     formatter/          name.txt (official title), name-alt.txt (file title),
@@ -30,7 +30,7 @@ Open index.html for a visual overview with copy buttons.
 1. Badges: Settings > Playback > Versions > Badges > Edit.
    Delete all existing badges (same label = first one wins), paste
    badges.json in Import, click Import, then Save.
-   The row should read "47 badges of your own".
+   The row should read "46 badges of your own".
 2. CSS: Settings > Theme > Custom CSS. Paste badges.css at the end,
    Apply CSS, then Keep within 15 s. It gives text and image badges the
    same height and corner radius and makes the image fill the frame.

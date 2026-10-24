@@ -7,7 +7,7 @@
     {"name": "HDR", "query": "/HDR|\\bDV\\b|HLG/", "fields": ["visualTags"]},
     {"name": "SDR", "query": "/^(?!.*(HDR|\\bDV\\b|\\bDoVi\\b|HLG|Dolby[ ._-]?Vision)).+$/", "fields": ["filename"]},
     {"name": "IMAX", "query": "/\\bimax\\b/", "fields": ["visualTags", "editions", "filename"]},
-    {"name": "Extended", "query": "/extended|director|unrated|uncut|ultimate|special[ ._-]?edition|final[ ._-]?cut|redux/", "fields": ["editions", "filename"]},
+    {"name": "Extended", "query": "/^(Extended Edition|Director's Cut|Uncut|Ultimate Edition)$|\\bunrated\\b|version[ ._-]?longue/", "fields": ["editions", "filename"]},
     {"name": "VF", "query": "/^(French|Multi)$|\\b(TRUEFRENCH|FRENCH|VFF|VFQ|VFI|VF2|MULTI)\\b/", "fields": ["languages", "filename", "folderName"]}
   ]
 }
