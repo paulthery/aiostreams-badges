@@ -45,13 +45,20 @@ title, year, duration, source addon and size.
     Film Title . 2023
     2h32 . Torrentio . 62.5 GB
 
+    Series Title . S01E02 . 2009
+    0h50 . Torrentio . 5.55 GB
+
 1. In the AIOStreams config: Formatter > Formatter selection > Custom.
 2. Name Template: paste the content of `formatter/name.txt`. It shows the
-   official title from the film's metadata, so every version carries the
-   same clean name (no Cyrillic or misspelled file titles). Editions
-   (Extended, Director's Cut) are unaffected: they come from the badges.
-   If the name comes out empty, use `formatter/name-alt.txt` instead
-   (title read from the file name).
+   official title from the metadata, so every version carries the same
+   clean name (no Cyrillic or misspelled file titles), and falls back to
+   the title read from the file name when the metadata has none. Series
+   add the requested season and episode (S01E02, zero padded), taken from
+   the episode you opened, not from the file (a season pack would read
+   S01-S04). Year: from the file name, else from the metadata (first air
+   year for a series). Editions (Extended, Director's Cut) are
+   unaffected: they come from the badges. `formatter/name-alt.txt` always
+   uses the title read from the file name.
 3. Description Template: paste the content of `formatter/description.txt`.
 4. Save the config.
 

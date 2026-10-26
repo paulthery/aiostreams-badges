@@ -1,1 +1,1 @@
-{stream.title::title}{? · {stream.year}?}
+{stream.title::title}{metadata.episode::exists[" · S{metadata.season::<10["0{metadata.season}"||"{metadata.season}"]}E{metadata.episode::<10["0{metadata.episode}"||"{metadata.episode}"]}"||""]}{stream.year::exists[" · {stream.year}"||"{metadata.year::exists[" · {metadata.year}"||""]}"]}

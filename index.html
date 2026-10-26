@@ -179,7 +179,7 @@ img[data-ui=&#x27;version-badge&#x27;] {
   ]
 }</pre></div>
 
-<div class="blk"><h3>Formatter: name template</h3><button data-t="fn">Copy</button><pre id="fn">{metadata.title}{? &#183; {stream.year}?}</pre></div>
+<div class="blk"><h3>Formatter: name template</h3><button data-t="fn">Copy</button><pre id="fn">{metadata.title::exists[&quot;{metadata.title}&quot;||&quot;{stream.title::title}&quot;]}{metadata.episode::exists[&quot; &#183; S{metadata.season::&lt;10[&quot;0{metadata.season}&quot;||&quot;{metadata.season}&quot;]}E{metadata.episode::&lt;10[&quot;0{metadata.episode}&quot;||&quot;{metadata.episode}&quot;]}&quot;||&quot;&quot;]}{stream.year::exists[&quot; &#183; {stream.year}&quot;||&quot;{metadata.year::exists[&quot; &#183; {metadata.year}&quot;||&quot;&quot;]}&quot;]}</pre></div>
 <div class="blk"><h3>Formatter: description template</h3><button data-t="fd">Copy</button><pre id="fd">{stream.duration::exists[&quot;{stream.duration::time(&#x27;%-Hh%M&#x27;)} &#183; &quot;||&quot;{metadata.runtime::exists[&quot;{metadata.runtime::time(&#x27;%-Hh%M&#x27;)} &#183; &quot;||&quot;{metadata.episodeRuntime::exists[&quot;{metadata.episodeRuntime::time(&#x27;%-Hh%M&#x27;)} &#183; &quot;||&quot;&quot;]}&quot;]}&quot;]}{addon.name}{? &#183; {stream.size::bytes}?}</pre></div>
 
 <footer>Typeface Inter. Gold #C6A56B, grey #8C8C8C. Images: github.com/paulthery/aiostreams-badges</footer>
