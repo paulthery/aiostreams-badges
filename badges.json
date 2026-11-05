@@ -1,7 +1,6 @@
 {
   "badges": [
     {"label": "T1", "match": "\\bT1$", "fields": ["rseMatched"], "group": "tier", "color": "#0E0E0E", "background": "#C6A56B", "border": "#C6A56B"},
-    {"label": "T2", "match": "\\bT2$", "fields": ["rseMatched"], "group": "tier", "color": "#EDE8DF", "border": "#EDE8DF"},
     {"label": "T3", "match": "\\bT3$", "fields": ["rseMatched"], "group": "tier", "color": "#8C8C8C", "border": "#4A4A4A"},
     {"label": "LQ", "match": "^(LQ|LQ Title|Anime LQ|Asian LQ|Upscaled|FR FastSUB|FR LQ .*)$", "fields": ["rseMatched"], "color": "#8C8C8C", "border": "#8C8C8C"},
     {"label": "4K", "match": "^(2160p|4k)$", "fields": ["resolution"], "group": "res", "color": "#0E0E0E", "background": "#EDE8DF", "border": "#EDE8DF"},

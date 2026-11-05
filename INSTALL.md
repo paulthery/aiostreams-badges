@@ -14,7 +14,7 @@ Images load from this repository; nothing to host.
    one wins, so old badges would hide the new ones.
 3. Open `badges.json`, copy all of it, paste it in Import.
 4. Click Import, then Save (white button, bottom right).
-5. The Badges row must read `70 badges of your own`. If not, Save was
+5. The Badges row must read `69 badges of your own`. If not, Save was
    skipped: closing with the cross or Cancel discards the import.
 
 ## 2. CSS
@@ -88,7 +88,7 @@ the second.
 Most badges read the file name or the parsed tags and work as is. These
 read results from your AIOStreams config:
 
-    T1 T2 T3 LQ    Filters > Stream Expression > Ranked Stream Expressions
+    T1 T3 LQ       Filters > Stream Expression > Ranked Stream Expressions
                    > Synced URLs, add:
                    https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json
 
