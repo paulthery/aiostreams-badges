@@ -111,35 +111,35 @@ HLG or Dolby Vision marker. No formatter text needed.
 One badge per cut or edition. They share a group, so a version shows only
 the first match, most common first:
 
-    DIR CUT       editions + file   Director's Cut, Version (du) Realisateur
-    EXTENDED      editions + file   Extended Edition, Version Longue
+    DIR CUT       editions + file   Director's Cut
+    EXTENDED      editions          Extended Edition
     FINAL CUT     file name
     UNRATED       file name
-    UNCUT         editions + file   Uncut, Version Integrale
-    ULTIMATE      editions + file   Ultimate Cut/Edition, Version Ultime
-    DEFINITIVE    file name         Definitive Cut/Edition, Version Definitive
+    UNCUT         editions          Uncut
+    ULTIMATE      editions + file   Ultimate Cut/Edition
+    DEFINITIVE    file name         Definitive Cut/Edition
     REDUX         file name
     ROGUE CUT     file name
     ROADSHOW      file name
-    UNCENSORED    file name         Uncensored, Non Censure
-    SPECIAL ED    file name         Special Edition, Edition Speciale
-    ANNIVERSARY   editions + file   Anniversary Edition, Edition Anniversaire
-    COLLECTOR     editions + file   Collector's Edition, Edition Collector
-    INTL CUT      file name         International Cut, Version Internationale
-    ALT CUT       file name         Alternate Cut, Version Alternative
+    UNCENSORED    file name
+    SPECIAL ED    file name         Special Edition
+    ANNIVERSARY   editions + file   Anniversary Edition
+    COLLECTOR     editions + file   Collector's Edition
+    INTL CUT      file name         International Cut/Version
+    ALT CUT       file name         Alternate Cut/Version
     PRODUCER CUT  file name
     ASSEMBLY      file name
-    DIAMOND       editions + file   Diamond Edition, Edition Diamant
-    PLATINUM      file name         Platinum Edition, Edition Platine
-    B&W           file name         Black and White/Chrome, Noir et Blanc
+    DIAMOND       editions + file   Diamond Edition
+    PLATINUM      file name         Platinum Edition
+    B&W           file name         Black and White/Chrome, Noir Edition
     DESPECIALIZED file name
-    TV CUT        file name         TV Cut, Version TV
+    TV CUT        file name         TV Cut/Version
     WORKPRINT     file name
     THEATRICAL    editions
 
-French names match with or without accents. Shown before the editions:
+English release names only. Shown before the editions:
 IMAX and CRITERION (gold). Separate badges, shown alongside: REMASTERED
-(Remastered, Restored, Remasterise, Restauree), OPEN MATTE. The Extended
+(Remastered, Restored), OPEN MATTE. The Extended
 quick filter catches every cut and edition above except THEATRICAL.
 
 Parsed editions are read first, so titles such as Uncut Gems, Paper Cut

@@ -82,9 +82,7 @@ Anniversary / Collector / International / Alternate / Producer's Cut /
 Open Matte 2, Assembly / Diamond / Platinum / B&W / Despecialized 1.
 Scores add up but stay under 50, the gap between two Vidhin tiers, so an
 edition never lifts a T2 above a T1. Keep Stream Expression Score in the
-sort, after Quality. English and French release names are matched
-(Version Longue, Version Realisateur, Edition Collector, Remasterise...),
-with and without accents.
+sort, after Quality. English release names only.
 
 Remove the badges you do not need before importing.
 
