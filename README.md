@@ -16,7 +16,11 @@ Open index.html for a visual overview with copy buttons.
 
     INSTALL.md          step by step install, checks, troubleshooting
     index.html          overview page: preview, install, copy buttons
-    badges.json         full badge set (68 badges)
+    badges.json         full badge set (82 badges)
+    ranked-stream-expressions.json
+                        service tags (Ready XX) and edition ranking, for the config
+    keywords.json       Preferred Keywords list (same editions, optional: the
+                        ranking above already orders them)
     badges.css          custom CSS, required for the image badges
     quick-filters.json  quick filter row (T1, 4K, HD, SD, HDR, SDR, IMAX, Extended, VF)
     formatter/          name.txt (official title, SxxEyy, year), name-alt.txt (file title),
@@ -33,7 +37,7 @@ Open index.html for a visual overview with copy buttons.
 1. Badges: Settings > Playback > Versions > Badges > Edit.
    Delete all existing badges (same label = first one wins), paste
    badges.json in Import, click Import, then Save.
-   The row should read "68 badges of your own".
+   The row should read "82 badges of your own".
 2. CSS: Settings > Theme > Custom CSS. Paste badges.css at the end,
    Apply CSS, then Keep within 15 s. It gives text and image badges the
    same height and corner radius and makes the image fill the frame.
@@ -42,7 +46,10 @@ Open index.html for a visual overview with copy buttons.
 4. Formatter (optional): AIOStreams config > Formatter > Custom. Paste
    formatter/name.txt in Name Template and formatter/description.txt in
    Description Template, save.
-5. Quit and relaunch the app (Cmd+Q) so images reload.
+5. Ranked stream expressions (config): Filters > Stream Expression >
+   Ranked Stream Expressions > Import ranked-stream-expressions.json, save
+   the config. Import replaces the inline list (synced URLs stay).
+6. Quit and relaunch the app (Cmd+Q) so images reload.
 
 The CSS cannot live inside badges.json: the badge format has no CSS field.
 
@@ -59,11 +66,25 @@ Some badges read results from the AIOStreams config, not from the file name.
 
     T1 LQ            Vidhin ranked stream expressions (rseMatched)
                      https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json
-    RD TB AD EN      four ranked stream expressions, score 0:
+    Services         ranked-stream-expressions.json, one "Ready XX"
+                     expression per AIOStreams service, score 0:
                      /* Ready RD */ service(cached(streams), 'realdebrid')
-                     /* Ready AD */ service(cached(streams), 'alldebrid')
-                     /* Ready TB */ service(cached(streams), 'torbox')
-                     /* Ready EN */ service(cached(streams), 'easynews')
+                     RD TB AD EN PM DL OC P.IO ED DR PKP SEEDR TR ST ND AM SN AIO
+                     (SEEDR, not SDR: SDR is the dynamic range badge)
+
+## Edition ranking
+
+The same file ranks editions inside a quality tier. Small scores, most
+common first: IMAX 12, Criterion 11, Director's Cut 10, Extended 9,
+Final Cut 8, Unrated 7, Uncut 6, Ultimate 5, Definitive / Redux /
+Rogue Cut / Remastered 4, Roadshow / Uncensored / Special Edition 3,
+Anniversary / Collector / International / Alternate / Producer's Cut /
+Open Matte 2, Assembly / Diamond / Platinum / B&W / Despecialized 1.
+Scores add up but stay under 50, the gap between two Vidhin tiers, so an
+edition never lifts a T2 above a T1. Keep Stream Expression Score in the
+sort, after Quality. English and French release names are matched
+(Version Longue, Version Realisateur, Edition Collector, Remasterise...),
+with and without accents.
 
 Remove the badges you do not need before importing.
 
