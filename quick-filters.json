@@ -2,7 +2,7 @@
   "quickFilters": [
     {"name": "T1", "query": "/\\bT1$/", "fields": ["rseMatched"]},
     {"name": "4K", "query": "/^(2160p|4k)$/", "fields": ["resolution"]},
-    {"name": "HD", "query": "/^(1440p|1080p)$/", "fields": ["resolution"]},
+    {"name": "HD", "query": "/^1080p$/", "fields": ["resolution"]},
     {"name": "SD", "query": "/^(720p|576p|480p)$/", "fields": ["resolution"]},
     {"name": "HDR", "query": "/HDR|\\bDV\\b|HLG/", "fields": ["visualTags"]},
     {"name": "SDR", "query": "/^(?!.*(HDR|\\bDV\\b|\\bDoVi\\b|HLG|Dolby[ ._-]?Vision)).+$/", "fields": ["filename"]},
